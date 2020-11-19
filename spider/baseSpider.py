@@ -30,6 +30,5 @@ def get_info(url):
         headers = create_headers()
         response_info = requests.get(url=url, headers=headers)
         html = response_info.content
-        print(html)
         data = json.loads(html)
     return data
