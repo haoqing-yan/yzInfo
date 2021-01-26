@@ -10,9 +10,6 @@ import requests
 from spider.headers import create_headers
 
 thread_pool_size = 50
-
-# 防止爬虫被禁，随机延迟设定
-# 如果不想delay，就设定False，
 # 具体时间可以修改random_delay()，由于多线程，建议数值大于10
 RANDOM_DELAY = False
 
