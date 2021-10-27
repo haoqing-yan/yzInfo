@@ -21,7 +21,7 @@ CREATE TABLE `universities`
     `research`      varchar(64) DEFAULT NULL COMMENT '研究方向',
     `type`          varchar(10) DEFAULT NULL COMMENT '学习方式',
     `studentNumber` varchar(10) DEFAULT NULL COMMENT '招生人数',
-    `comment`       varchar(10) DEFAULT NULL COMMENT '备注',
+    `comment`       varchar(80) DEFAULT NULL COMMENT '备注',
     `createTime`    varchar(12) DEFAULT NULL COMMENT '创建时间',
     `updateTime`    varchar(12) DEFAULT NULL COMMENT '修改时间',
     PRIMARY KEY (`id`)
