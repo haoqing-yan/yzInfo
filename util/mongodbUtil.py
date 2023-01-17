@@ -9,7 +9,7 @@ def insert(data):
     if find_result is None:
         result = collection.insert_one(data)
     else:
-        return 'DB has had record'
+        return 'DB had record'
     return result
     # return findresult
 

@@ -1,11 +1,9 @@
-import json
 import re
 
 import requests
 from bs4 import BeautifulSoup
 
-from spider.YzInfo import YzInfo
-from util.mysqlUtil import insert_universities
+from util.mongodbUtil import insert
 
 if __name__ == '__main__':
     mainUrl = 'https://yz.chsi.com.cn'
@@ -66,7 +64,7 @@ if __name__ == '__main__':
             if len(faculty_page_number) == 0:
                 continue
             page_list.append(faculty_page_number[0])
-        # print(page_list)
+        print(page_list)
 
         for item in faculty_infos:
             # 找到具体 id
@@ -95,4 +93,5 @@ if __name__ == '__main__':
                 'studentNumber': number[0],
                 'comment': number[1]
             }
+            # print(insert(university))
 

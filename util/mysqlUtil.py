@@ -1,10 +1,6 @@
-import json
-import re
 import time
 
-import jsonify as jsonify
 import pymysql
-import requests
 
 
 def insert_majors(data):
