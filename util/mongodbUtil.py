@@ -17,4 +17,4 @@ def get_majors() :
     client = pymongo.MongoClient('mongodb://localhost:27017/')
     db = client['zyInfo']
     collection = db['majors']
-    result = collection.find_
+    result = collection.find()
